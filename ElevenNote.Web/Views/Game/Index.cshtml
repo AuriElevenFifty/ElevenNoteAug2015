@@ -1,0 +1,60 @@
+﻿@model ElevenNote.Web.Models.GuessingGameViewModel
+
+<h1>Guessing Game</h1>
+<hr />
+
+@if (ViewBag.Win == null || !ViewBag.Win)
+{
+    if (ViewBag.Win != null && !ViewBag.Win)
+    {
+        <h2>Sorry, @Model.Name, the guess of @Model.Guess is wrong. :(</h2>
+    }
+    
+    using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @if (ViewBag.Win != null)
+                    {
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                    }
+                    else
+                    {
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    }
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Guess, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Guess, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Guess, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Guess" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <h1>You win! Great job, @Model.Name! The answer was @Model.Guess!</h1>
+}
+<div>
+    @Html.ActionLink("Start Over", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
