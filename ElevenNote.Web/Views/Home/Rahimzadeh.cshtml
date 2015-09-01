@@ -1,0 +1,18 @@
+﻿<h2>Rahimzadeh</h2>
+@{
+    var fizzbuzz = new List<String>();
+
+    for (var i = 1; i <= 100; i++)
+    {
+        if (0 == i % 15) { fizzbuzz.Add("FizzBuzz"); }
+        else if (0 == i % 5) { fizzbuzz.Add("Buzz"); }
+        else if (0 == i % 3) { fizzbuzz.Add("Fizz"); }
+        else { fizzbuzz.Add(i.ToString()); }
+    }
+}
+<select>
+    @foreach (var fb in fizzbuzz)
+    {
+        <option value="@fb">@fb</option>
+    }
+</select>
