@@ -19,6 +19,7 @@ namespace ElevenNote.Models.ViewModels
         [Display(Name = "Date Modified")]
         public DateTime? DateModified { get; set; }
 
+        [Display(Name = "Is Favorite")]
         public bool IsFavorite { get; set; }
     }
 }
