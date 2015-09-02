@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevenNote.Web", "ElevenNote.Web\ElevenNote.Web.csproj", "{11609B07-E893-4A40-BFB7-9E0C46E71BC5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevenNote.Models", "ElevenNote.Models\ElevenNote.Models.csproj", "{D652A369-AA12-469D-8A1D-765356B8C24A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{04BF3BA5-4C11-4FD3-8364-0CF385F2266C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevenNote.Services", "ElevenNote.Services\ElevenNote.Services.csproj", "{42E36C67-4B30-4FB6-ACD7-69BCD9F1AB38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{04BF3BA5-4C11-4FD3-8364-0CF385F2266C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04BF3BA5-4C11-4FD3-8364-0CF385F2266C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04BF3BA5-4C11-4FD3-8364-0CF385F2266C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E36C67-4B30-4FB6-ACD7-69BCD9F1AB38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E36C67-4B30-4FB6-ACD7-69BCD9F1AB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E36C67-4B30-4FB6-ACD7-69BCD9F1AB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E36C67-4B30-4FB6-ACD7-69BCD9F1AB38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
