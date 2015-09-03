@@ -1,10 +1,10 @@
 ﻿@model ElevenNote.Models.ViewModels.NoteEditViewModel
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Create Note</h4>
         <hr />
@@ -39,4 +39,7 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        CKEDITOR.replace("Contents");
+    </script>
 }

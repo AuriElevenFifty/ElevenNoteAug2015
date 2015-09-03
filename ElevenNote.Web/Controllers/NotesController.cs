@@ -32,6 +32,7 @@ namespace ElevenNote.Web.Controllers
             return View();
         }
 
+        [ValidateInput(false)]
         [HttpPost]
         [ActionName("Create")]
         public ActionResult CreatePost(NoteEditViewModel model)
@@ -57,6 +58,7 @@ namespace ElevenNote.Web.Controllers
             return View(note);
         }
 
+        [ValidateInput(false)]
         [HttpPost]
         [ActionName("Edit")]
         public ActionResult EditPost(NoteEditViewModel model)
