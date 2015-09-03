@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "ElevenNoteQuick"
+  },
+  "hostingPlanName": {
+    "value": "Default1"
+  },
+  "siteLocation": {
+    "value": "North Central US"
+  },
+  "sku": {
+    "value": "Basic"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "1b9df497-5d6f-4a22-a98c-cb2ac7f0ea12"
+  },
+  "resourceGroup": {
+    "value": "Default-Web-NorthCentralUS"
+  }
+}

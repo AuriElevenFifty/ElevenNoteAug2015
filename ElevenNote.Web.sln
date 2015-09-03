@@ -11,6 +11,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevenNote.Services", "ElevenNote.Services\ElevenNote.Services.csproj", "{42E36C67-4B30-4FB6-ACD7-69BCD9F1AB38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevenNoteQuick", "ElevenNoteQuick\ElevenNoteQuick.csproj", "{E412D300-C48D-4916-9650-B207DECE19D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{CF6DA9BD-DC70-4773-86FF-F4FC818A264E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{A599471D-FD75-488A-80F9-60AF1535394C}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{0C026570-BE2D-4C40-9514-D7948AE547B0}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\ElevenNoteQuick.json = PublishScripts\Templates\ElevenNoteQuick.json
+		PublishScripts\Templates\ElevenNoteQuick.param.dev.json = PublishScripts\Templates\ElevenNoteQuick.param.dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,8 +48,16 @@ Global
 		{42E36C67-4B30-4FB6-ACD7-69BCD9F1AB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42E36C67-4B30-4FB6-ACD7-69BCD9F1AB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42E36C67-4B30-4FB6-ACD7-69BCD9F1AB38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E412D300-C48D-4916-9650-B207DECE19D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E412D300-C48D-4916-9650-B207DECE19D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E412D300-C48D-4916-9650-B207DECE19D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E412D300-C48D-4916-9650-B207DECE19D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A599471D-FD75-488A-80F9-60AF1535394C} = {CF6DA9BD-DC70-4773-86FF-F4FC818A264E}
+		{0C026570-BE2D-4C40-9514-D7948AE547B0} = {CF6DA9BD-DC70-4773-86FF-F4FC818A264E}
 	EndGlobalSection
 EndGlobal
